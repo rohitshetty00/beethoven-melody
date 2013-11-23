@@ -1,0 +1,86 @@
+<!DocTYPE html5>
+<html>
+<head><meta name="viewport" content="width=device-width,user-scalable=yes"><link rel="icon" type="image" href="beethoven2.jpg" />
+<title>
+Beethoven-Melodiously simple
+</title>
+<style>
+textarea{font-family:"Times New Roman";font-size:55px;}
+</style>
+<script src="js/beeth.js"></script>
+<script src="dependencies/FileSaver.js"></script>
+<script src="dependencies/Blob.js"></script>
+</head>
+<body bgcolor="skyblue">
+<center><img src="images/beethoven.png"></center>
+<p>
+<p>
+<table>
+<form>
+<tr><td>
+File Load</td></tr>
+<tr>
+<td><input type="file" id="fileinput"/> 
+</td><td><input type="button" value="Load" id=filename onclick="handleFileSelect()"/>
+</td></tr>
+<tr>
+<td>
+Slide type:
+</td></tr><tr>
+<td>
+Slide<input type="radio" name="slide" value="1" id="slide"/></td>
+<td>impressheet</td>
+<td><input type="radio" name="slide" value="0" id="impreess"/></td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+slide pos X:</td>
+<td><input type="text" size='5' id="slidex" value="0" /></td>
+<td>Slide pos Y:</td>
+<td><input type="text" size='5' id="slidey" value="0"/></td>
+<td>Slide pos Z:</td>
+<td><input type="text" size='5' id="slidez" value="0"/></td>
+</tr>
+<!--<textarea cols="40" rows="20">
+-->
+<tr>
+<td>3D rotate X:</td>
+<td><input type="text" size='5' id="rotx" value="0"/></td>
+<td>3D rotate Y:</td>
+<td><input type="text" size='5' id="roty" value="0"/></td>
+<td>3D rotate Z:</td>
+<td><input type="text" size='5' id="rotz" value="0"/></td>
+<td>Content:</td>
+<td><textarea cols="20" rows="2" id="content" value=""></textarea></td>
+</tr>
+<tr><td></td><td></td><td>
+Data scale:
+<td><input type="text" size='5' id="datascale" value="0.5"/></td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+<input type="button" value="bold"/>
+<input type="button" value="italics"/>
+<input type="button" value="underline"/>
+<input type="button" value="color"/>
+</td></tr>
+<tr><td></td><td></td><td><!--<a href="hello.html">---><input type="button" value="save" onclick="save()" ></button>
+</table>
+<p><p>
+<table><tr>
+<td><input type="button" value="prev" id="previ" onclick="prev()"/></td>
+<td><input type="button" value="Print" id="submit"  onclick="submiti()"/></td>
+<td><input type="button" value="next" id="nexti" onclick="next()"/></td>
+<td><input type="text"  id="pos" size="2" /></td><td><input type="button" value="Go" onclick="go()" /></td>
+</table>
+</form>
+</body>
+</html>
+
